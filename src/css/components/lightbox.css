@@ -1,3 +1,39 @@
 /**
 * Lightbox
 */
+/**
+* Lightbox
+*/
+
+img[data-full-img] {
+  cursor: pointer;
+}
+
+#lightbox {
+  
+  
+}
+#lightbox[open] {
+  animation: zoom-in 600ms;
+}
+@keyframes zoom-in {
+  from {
+    transform: scale(0.1);
+  }
+}
+@keyframes fade-in  {
+  from {
+    opacity: 0;
+  }
+}
+
+dialog#lightbox::backdrop {
+  color: brown;
+  animation: fade-in 3s;
+}
+
+#lightbox img {
+  
+  
+}
+
